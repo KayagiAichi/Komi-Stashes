@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komi's Stash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---Container First Start--->
+    <div class="container">
+        <div class="name">Welcome to Komi's Stash</div>
+
+    <!---Form Section--->
+    <form id="passform">
+        <input type="password" class="password-input" id="password" placeholder="password" required>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    </div>
+    <script>
+        document.getElementById("passform").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const passcode = document.getElementById("password").value;
+            const correctpass = "adminkomi";
+
+            if (passcode === correctpass) {
+                window.location.href= "https://tiktok.com/@komi.crack";
+            } else {
+                alert("Incorrect passcode. Try Again");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/*Background Settings*/
+body{
+    font-family: Arial, Sans-Serif;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #fff, #525252);
+    background-size: 400%, 400%;
+    animation: GradientMove 5s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes GradientMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/*Container First Start*/
+.container{
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px) saturate(180%) contrast(90%);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.name{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 1000% 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgbtext 5s linear infinite;
+}
+@keyframes rgbtext{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Form Section*/
+form{
+    margin-top: 30px;
+}
+    /*Password input style*/
+.password-input{
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+    /*Submit Button Style*/
+    .submit-btn{
+        padding: 10px 150px;
+        background-color: rgba(255,255,255,0.2);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: block;
+        margin: 20px auto 0 auto;
+        transition: 0.3s ease;
+    }
+    .submit-btn:hover{
+        background-color: #777;
+        transform: scale(1.05);
+    }
