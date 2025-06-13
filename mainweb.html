@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komi Stashes Main Web</title>
+    <link rel="stylesheet" href="mainweb_style.css">
+</head>
+<body>
+    <header>
+        <div class="option-button">&#9776;</div>
+        <h1>Komi Stashes</h1>
+    </header>
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <p>Menu Item 1</p>
+            <p>Menu Item 2</p>
+            <p>Menu Item 3</p>
+        </div>
+    </div>
+    <main>
+        <div class="container-grid">
+            <div class="stash-box">Container 1</div>
+            <div class="stash-box">Container 2</div>
+            <div class="stash-box">Container 3</div>
+            <div class="stash-box">Container 4</div>
+            <div class="stash-box">Container 5</div>
+            <div class="stash-box">Container 6</div>
+        </div>
+    </main>
+    <!---Toggle Option Button--->
+    <script>
+        const optionButton = document.querySelector('.option-button');
+        const menuOverlay = document.getElementById('menuOverlay');
+        optionButton.addEventListener('click',()=>{
+            menuOverlay.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
